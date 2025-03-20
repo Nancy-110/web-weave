@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+
+body {
+    color: #181D24;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 100px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: #181D24;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #C29F7B;
+}
+
+.location {
+    font-size: 14px;
+    color: #181D24;
+}
+
+.hero {
+    height: 100vh;
+    background: url('https://via.placeholder.com/1920x1080?text=Oregon+Landscape') no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding-top: 80px;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.hero button, .content button {
+    padding: 15px 30px;
+    font-size: 16px;
+    background-color: #C29F7B;
+    color: #181D24;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero button:hover, .content button:hover {
+    background-color: #191D23;
+    color: white;
+}
+
+.content {
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.text-theme {
+    color: #C29F7B;
+}
+
+.tabs .tab-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tabs .tab-list li {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.tabs .tab-list li.active {
+    background: #C29F7B;
+    color: white;
+}
+
+.tab-content .tab-pane {
+    display: none;
+}
+
+.tab-content .tab-pane.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.tab-content img {
+    max-width: 533px;
+}
+
+.features {
+    background: url('https://via.placeholder.com/1920x1080?text=Community+Feature') no-repeat center/cover;
+    color: white;
+}
+
+.slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+.slide {
+    min-width: 300px;
+    text-align: left;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.slide h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+#contact form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact input, #contact textarea {
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+footer {
+    background: #181D24;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: #C29F7B;
+}
